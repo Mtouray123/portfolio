@@ -1,0 +1,114 @@
+.contactcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+    width: 450px;
+    border-radius: 20px;
+    background-color: transparent;
+    margin: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+    
+  }
+  
+  .contactcontainer svg {
+    font-size: 3em;
+    transition: all 0.5s ease-in-out 0s;
+    color: var(--clr-primary);
+    border: 3px solid var(--clr-primary);
+    padding: 5px;
+    border-radius: 20%;
+  }
+  .mailNumber .email {
+    font-size: 2em;
+    transition: all 0.5s ease-in-out 0s;
+    color: var(--clr-primary);
+  }
+  .mailNumber .phone{
+    font-size: 1.5em;
+    transition: all 0.5s ease-in-out 0s;
+    color: var(--clr-primary);
+  }
+  
+  .mailNumber > div{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-content: center; */
+  }
+  
+  .mailNumber p{
+    margin: 5px;
+  }
+  .contactcontainer svg:hover {
+    font-size: 4rem;
+  }
+  .linkedin:hover {
+    color: #0a66c2;
+  }
+  .github:hover {
+    color: black;
+  }
+  .email:hover {
+    color: #d93025;
+  }
+  .twitter:hover {
+    color: rgb(29, 155, 240);
+  }
+  .phone:hover {
+    color: rgb(0, 0, 0);
+  }
+  
+  .mailNumber{
+    border-radius: 20px;
+    background-color: transparent;
+    margin: auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* .mailNumber:hover {
+    font-size: 1.1rem;
+    transform: scale(1.04);
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 15px 0px,
+      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  } */
+  .contactMain{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+  @media (max-width: 670px) {
+    .contactcontainer svg {
+      font-size: 2em;
+    }
+    .contactcontainer{
+      width: 100%;
+    }
+    .mailNumber{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .mailNumber div{
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+    }
+    .contactMain{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+    }
+    .iconsCont{
+      width: 90%
+    }
+    .contactcontainer svg:hover {
+      font-size: 3rem;
+    }
+  }
+  
+
