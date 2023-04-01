@@ -30,20 +30,20 @@ export const Contact = () => {
               <FaLinkedin className="linkedin" />
             </a>
             <a
-              href="https://github.com/Shreyasgkhakal100/"
+              href="https://github.com/Mtouray123"
               target="_blank"
               rel="noreferrer"
             >
               <VscGithub className="github" />
             </a>
             <a
-              href="mailto:shreyasgkhakal100@gmail.com"
+              href="mailto:mahamadou12@gmail.com"
               target="_blank"
               rel="noreferrer"
             >
               <CgMail className="email" />
             </a>
-            <a href="tel:+918668613593" target="_blank" rel="noreferrer">
+            <a href="tel:+19739050437" target="_blank" rel="noreferrer">
               <BsFillTelephoneFill className="phone" />
             </a>
           </div>
