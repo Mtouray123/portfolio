@@ -1,27 +1,46 @@
-import React from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./Timeline.css";
-import { VerticalTimeline, VerticalTimelineElement} from "react-vertical-timeline-component";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-
 import WorkIcon from "@material-ui/icons/Work";
 import SchoolIcon from "@material-ui/icons/School";
-import StarRateIcon from "@material-ui/icons/StarRate";
 import { ThemeContext } from "../../Context/theme";
 
+// functional component that renders a timeline 
 export const Timeline = () => {
-  const [{ themename }] = React.useContext(ThemeContext);
-  const [linecolor, setlinecolor] = React.useState(
+// component imports themecontext fromb theme.jsx to dynamically set the color of timeline 
+  const [{ themename }] = useContext(ThemeContext);
+
+// uses usestate and useeffect hooks  to update color when theme changes 
+  const [linecolor, setlinecolor] = useState(
     themename === "light" ? "#23283e" : "#fcfcfc"
   );
-
-  React.useEffect(() => {
+  useEffect(() => {
     if (themename === "dark") {
       setlinecolor("#fcfcfc");
     } else {
       setlinecolor("#23283e");
     }
   }, [themename]);
-  
+
+// JS object that define the style of timeline element and icon 
+  const timelineElementStyle = {
+    boxShadow: `var(--shadow)`,
+    border: "3px solid var(--clr-primary)",
+    backgroundColor: `var(--clr-bg)`,
+    textAlign: "center",
+    color: `var(--clr-fg-alt)`,
+  };
+
+  const timelineIconStyle = {
+    border: ` 3px solid var(--clr-primary)`,
+    backgroundColor: `var(--clr-bg)`,
+    color: `var(--clr-primary)`,
+  };
+
   return (
     <>
       <div className="section mainsection">
@@ -31,68 +50,32 @@ export const Timeline = () => {
         <VerticalTimeline lineColor={linecolor}>
           <VerticalTimelineElement
             date={"Sept 2010 - Jun 2014"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
+            contentStyle={timelineElementStyle}
+            contentArrowStyle={{ borderRight: "16px solid  var(--clr-primary)" }}
+            iconStyle={timelineIconStyle}
             icon={<SchoolIcon />}
           >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
+            <h3 className="vertical-timeline-element-title" data-aos="fade-right">
               Graduate
             </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
+            <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
               Bloomfield Tech High 
             </h4>
             <p data-aos="fade-right">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatem aperiam totam cum atque nam.
+              Vocational Technical High School that offered occupational and academic instruction in courses related to building trades, graphic design, green energy, and televison/production.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             date={"Nov 2021 - Dec 2021"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
+            contentStyle={timelineElementStyle}
+            contentArrowStyle={{ borderRight: "16px solid  var(--clr-primary)" }}
+            iconStyle={timelineIconStyle}
             icon={<WorkIcon />}
           >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Package Handler
+            <h3 className="vertical-timeline-element-title" data-aos="fade-right">
+              (First Job) Package Handler
             </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
+            <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
               UPS
             </h4>
             <p data-aos="fade-right">
@@ -101,194 +84,58 @@ export const Timeline = () => {
           </VerticalTimelineElement>
           <VerticalTimelineElement
             date={"Oct 2021 - Present"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
+            contentStyle={timelineElementStyle}
+            contentArrowStyle={{ borderRight: "16px solid  var(--clr-primary)" }}
+            iconStyle={timelineIconStyle}
             icon={<SchoolIcon />}
           >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Student
+            <h3 className="vertical-timeline-element-title" data-aos="fade-right">
+              Package Handler
             </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
-              Lorem ipsum dolor sit.
+            <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
+              UPS
             </h4>
             <p data-aos="fade-right">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, tenetur enim magni minus neque, necessitatibus voluptate porro perferendis quia officiis corporis. Iusto asperiores labore quo.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis quisquam cupiditate, perspiciatis consequatur doloremque fugit obcaecati tenetur amet aspernatur voluptatum quod totam quo aut, vero deserunt nostrum quos accusamus.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date={"Feb 2020 - Present"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
-            icon={<WorkIcon />}
-          >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Lorem, ipsum.
-            </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
-              Lorem ipsum dolor sit.
-            </h4>
-            <p data-aos="fade-right">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos eveniet maiores doloribus atque neque, ex obcaecati autem molestiae sed provident quidem officia? Quibusdam illum, eos cupiditate tempora quasi consequuntur obcaecati perspiciatis magni sapiente in laborum!
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date={"Dec 2019 - Aug 2021"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
-            icon={<WorkIcon />}
-          >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Founder & Director (Part Time)
-            </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
-              Lorem ipsum dolor sit amet, consectetur adipisicing.
-            </h4>
-            <p data-aos="fade-right">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt aspernatur necessitatibus eaque ipsa itaque accusantium quo? Mollitia nesciunt impedit voluptatibus. Placeat obcaecati voluptatem consequatur neque, perferendis explicabo facilis magni quia!
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date={"Jul 2017 - Aug 2021"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
+            date={"Oct 2021 - Present"}
+            contentStyle={timelineElementStyle}
+            contentArrowStyle={{ borderRight: "16px solid  var(--clr-primary)" }}
+            iconStyle={timelineIconStyle}
             icon={<SchoolIcon />}
           >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Lorem ipsum dolor sit amet.
+            <h3 className="vertical-timeline-element-title" data-aos="fade-right">
+              Package Handler
             </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
-              Lorem ipsum dolor sit amet.
+            <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
+              UPS
             </h4>
             <p data-aos="fade-right">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia facilis voluptate dolorum beatae ut expedita, deleniti accusamus laboriosam enim, quos distinctio ad corporis blanditiis, fugit deserunt. Porro nostrum, excepturi magni maiores nam blanditiis labore veniam quis error, iusto cupiditate suscipit.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis quisquam cupiditate, perspiciatis consequatur doloremque fugit obcaecati tenetur amet aspernatur voluptatum quod totam quo aut, vero deserunt nostrum quos accusamus.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date={"March 2017"}
-            contentStyle={{
-              boxShadow: `var(--shadow)`,
-              border: "3px solid var(--clr-primary)",
-              backgroundColor: `var(--clr-bg)`,
-              textAlign: "center",
-              color: `var(--clr-fg-alt)`,
-            }}
-            contentArrowStyle={{
-              borderRight: "16px solid  var(--clr-primary)",
-            }}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
+            date={"Oct 2021 - Present"}
+            contentStyle={timelineElementStyle}
+            contentArrowStyle={{ borderRight: "16px solid  var(--clr-primary)" }}
+            iconStyle={timelineIconStyle}
             icon={<SchoolIcon />}
           >
-            <h3
-              className="vertical-timeline-element-title"
-              data-aos="fade-right"
-            >
-              Lorem, ipsum dolor.
+            <h3 className="vertical-timeline-element-title" data-aos="fade-right">
+              Package Handler
             </h3>
-            <h4
-              className="vertical-timeline-element-subtitle"
-              data-aos="fade-right"
-            >
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, reiciendis!
+            <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
+              UPS
             </h4>
             <p data-aos="fade-right">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, aliquid!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis quisquam cupiditate, perspiciatis consequatur doloremque fugit obcaecati tenetur amet aspernatur voluptatum quod totam quo aut, vero deserunt nostrum quos accusamus.
             </p>
           </VerticalTimelineElement>
+          </VerticalTimeline>
+        </div>
+      </>
+    )
+  }
 
-          <VerticalTimelineElement
-            icon={<StarRateIcon />}
-            iconStyle={{
-              border: ` 3px solid var(--clr-primary)`,
-              backgroundColor: `var(--clr-bg)`,
-              color: `var(--clr-primary)`,
-            }}
-          ></VerticalTimelineElement>
-        </VerticalTimeline>
-      </div>
-    </>
-  );
-};
