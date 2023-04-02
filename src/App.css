@@ -149,3 +149,9 @@ main {
     margin-top: 4em;
   }
 }
+
+#word {
+  color: red;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
