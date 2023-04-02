@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-
+// Usewords component is rendered and fetches and displays random word/definition from the API.
 import { UseWords } from "../../API/Words";
 import { Introduction } from "../Introduction/Introduction";
 import { Timeline } from "../Timeline/Timeline";
@@ -13,7 +13,7 @@ import EmailIcon from "@material-ui/icons/Email";
 import PhoneIcon from "@material-ui/icons/Phone";
 
 
-
+// Renders various components related to my Intro, Skills, Contact, and resume
 export function About() {
   return (
     <>
