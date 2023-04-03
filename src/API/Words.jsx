@@ -13,7 +13,9 @@ export function UseWords() {
     const [loading, setLoading] = useState(true);   
 
     // declares new var and initializes to array of strings
-    let wordList = ['Connoisseur', 'Ambition', 'Passionate', 'Opportunist', 'Resilient']
+    let wordList = ['Connoisseur', 'Ambition', 'Passionate', 'Opportunist', 'Resilient', 
+    'Accomplish', 'Challenge', 'Determination', 'Hope', 'Drive', 'Inspire', 'Fearless', 'Fulfillment',
+    'Sacrifice', 'Suceed', 'Success', 'Commitment', 'Dedicate', 'Inspiration', 'Honor']
     
     // hook used to fetch word data from API and called with callback function
     useEffect(() => {

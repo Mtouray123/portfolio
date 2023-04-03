@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useEffect, useContext} from "react";
+
 import { Header } from "./components/Header/Header";
-import "./App.css";
 import { ThemeContext } from "./Context/theme";
 import { About } from "./components/About/About";
-import Aos from "aos";
 import { Projects } from "./components/Projects/Projects";
 import { Contact } from "./components/Contact/Contact";
 import { Footer } from "./components/Footer/Footer";
 import { ScrollToTop } from "./components/ScrollToTop/ScrollToTop";
 
+import Aos from "aos";
+import "./App.css";
+
 export default function App() {
-  const [{ themename }] = React.useContext(ThemeContext);
-  React.useEffect(() => {
+  const [{ themename }] = useContext(ThemeContext);
+
+  useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
   
@@ -22,7 +25,6 @@ export default function App() {
       </section>
       <main>
         <About />
-        {/* <Github /> */}
         <section id="#projects">
           <Projects />
         </section>

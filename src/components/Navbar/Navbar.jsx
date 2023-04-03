@@ -8,18 +8,25 @@ import CloseIcon from "@material-ui/icons/Close";
 
 import "./Navbar.css";
 
-
+// React component that renders a nav bar with links to different sections of the page
+// imports Themecontext
 export const Navbar = () => {
   const [{ themename, toggeltheme }] = useContext(ThemeContext);
+
+// uses hook to manage the state of whether or not nav menu is currently shown
+// setShowNavList takes argument which will become new value for showNavList
   const [showNavList, setShowNavList] = useState(false);
 
+// function used to toggle the nav menu and scrolls to selected section
+// takes id parameter that is used to identify the section of the page
   const toggleNavList = (id) => {
-    var element = document.getElementById(id);
+    const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView();
     }
     setShowNavList(!showNavList);
   };
+
   return (
     <>
       <nav className="center nav">
@@ -30,7 +37,7 @@ export const Navbar = () => {
           <li className="nav__list-item">
             <a
               href="#home"
-              onClick={() => toggleNavList("#home")}
+              onClick={() => toggleNavList("#home")}  
               className="link link--nav"
             >
               Home
