@@ -40,7 +40,7 @@ export const Timeline = () => {
     backgroundColor: `var(--clr-bg)`,
     color: `var(--clr-primary)`,
   };
-
+// using code snippets to write HTML-like code in js files
   return (
     <>
       <div className="section mainsection">

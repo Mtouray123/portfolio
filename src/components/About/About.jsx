@@ -15,18 +15,15 @@ export function About() {
         <UseWords />
         </div >
       <div className="about center">
-        <h1 data-aos="fade-right" className="mobileHead">
+{/* uses data-aos attribute that indicates component animated using AOS(Animate on Scroll) library */}
+        <h1 className="mobileHead">
           Welcome <span className="about__name">I'm Mahamadou Touray</span>
-        {/* </h1>
-        <h1 data-aos="fade-right" className="mobileHead">
-          I'm Mahamadou Touray */}
         </h1>
         <Type />
         <p className="about__desc" data-aos="fade-right">
-          Passionate and creative Software Developer having proficiency in
-          Full Stack. Attired with a variety of tools & technologies and keen to
-          learn new one. Worked on since last year and delivered
-          15+ projects till now.
+        Inspiring Software Engineer and well rounded individual who possesses the willingness to learn a multitude of new skills. 
+        Having proficiency in Full Stack. Attired with a variety of tools & technologies and keen to
+        learn new ones. 
         </p>
       </div>
       <Introduction />

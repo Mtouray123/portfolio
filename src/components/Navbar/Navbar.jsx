@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import { ThemeContext } from "../../Context/theme";
-import "./Navbar.css";
+
 import Brightness2Icon from "@material-ui/icons/Brightness2";
 import WbSunnyRoundedIcon from "@material-ui/icons/WbSunnyRounded";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 
+import "./Navbar.css";
+
+
 export const Navbar = () => {
-  const [{ themename, toggeltheme }] = React.useContext(ThemeContext);
-  const [showNavList, setShowNavList] = React.useState(false);
+  const [{ themename, toggeltheme }] = useContext(ThemeContext);
+  const [showNavList, setShowNavList] = useState(false);
 
   const toggleNavList = (id) => {
     var element = document.getElementById(id);
