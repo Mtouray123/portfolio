@@ -1,11 +1,17 @@
 import {useState, useEffect} from 'react';
 
+// fetches a random word from list of words, displays definition from an external API using the API
 export function UseWords() {
+    //usestate hook used to deine two pieces of state: words and loading
+    
+    // empty array that holds the data fetched from API
     const [words, setWords] = useState([]);
 
+    // boolean flag set to true to indicate data is being fetched
     const [loading, setLoading] = useState(true);   
 
     let wordList = ['Connoisseur', 'Ambition', 'Passionate', 'Opportunist', ]
+    // hook used to fetch word data from API 
     useEffect(() => {
         async function fetchWords(){
             setLoading(true)
@@ -20,14 +26,14 @@ export function UseWords() {
         fetchWords();
     }, [])
 
+    // statement returns 
     return(
         <>
         {loading?(<p>loading...</p>):(
         <div>
                 <h5>Word of Day: <span id="word">{words[0].word}</span></h5>
-                {/* {words?.meanings?(<><p>{words[0].meanings[0].definitions[0].definition}</p>|{""}</>):("")} */}
-
                 <p>{words[0].meanings[0].definitions[0].definition}</p>
+
             </div>
             )}
         </>

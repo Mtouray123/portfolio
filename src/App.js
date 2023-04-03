@@ -4,9 +4,6 @@ import "./App.css";
 import { ThemeContext } from "./Context/theme";
 import { About } from "./components/About/About";
 import Aos from "aos";
-import "aos/dist/aos.css";
-// import { Techstacks } from "./Components/About/Techstacks";
-import { Github } from "./components/About/Github";
 import { Projects } from "./components/Projects/Projects";
 import { Contact } from "./components/Contact/Contact";
 import { Footer } from "./components/Footer/Footer";
@@ -25,7 +22,7 @@ export default function App() {
       </section>
       <main>
         <About />
-        <Github />
+        {/* <Github /> */}
         <section id="#projects">
           <Projects />
         </section>
