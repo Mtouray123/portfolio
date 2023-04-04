@@ -1,13 +1,9 @@
 import React from "react";
-import { useContext } from "react";
 import "./Introduction.css";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
-import { ThemeContext } from "../../Context/theme";
 
-// functional component that displays info on About Me section
+// functional component Introductionthat displays info on About Me section
 export const Introduction = () => {
-// extracts themename property from context object
-  const { themename } = useContext(ThemeContext);
 
   return (
     <>
@@ -38,6 +34,7 @@ export const Introduction = () => {
               <h4>Terms That can describe me:</h4>
               <h4 className="different">
                 <span className="icons">
+                {/*Imports and Renders component from material ui package */}
                   <ExitToAppIcon />
                 </span>
                 Enthusiastic{" "}

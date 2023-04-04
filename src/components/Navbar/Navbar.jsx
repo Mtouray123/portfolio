@@ -26,15 +26,21 @@ export const Navbar = () => {
     }
     setShowNavList(!showNavList);
   };
-
+// 
   return (
     <>
       <nav className="center nav">
+      {/*renders unordered list of items representing a section of the website user can navigate to */}
+      {/*when user clicks item it will toggle a dropdrown menu that displays the sections of website  */}
+      {/*style attribute used to set the display property of the list based on the value of the showNavList state variable*/}
+      {/*if showNavList is true, display property set to flex and , this allows the nav list to be shown or hidden based on user interaction*/}
         <ul
           style={{ display: showNavList ? "flex" : null }}
           className="nav__list"
         >
           <li className="nav__list-item">
+            {/*each a tag Renders link for each section of the webpage*/}
+            {/*includes onClick event handler that calls the toggleNavList function with the arguement of each corresponding id within the page*/}
             <a
               href="#home"
               onClick={() => toggleNavList("#home")}  
@@ -91,21 +97,27 @@ export const Navbar = () => {
             </a>
           </li>
         </ul>
+    {/*button component that has onClick event that triggers the toggletheme function when clicked, changing the theme of the website between light/dark */}
         <button
           type="button"
           onClick={toggeltheme}
           className="btn btn--icon nav__theme"
+        // provides a accessible label for screen readers, indicating that the button toggles the theme
           aria-label="toggle theme"
           style={{ backgroundColor: "inherit" }}
         >
+        {/* */}
           {themename === "dark" ? <WbSunnyRoundedIcon /> : <Brightness2Icon />}
         </button>
+        {/*button with onClick event that triggers the toggleNavList function that toggles the dropdown menu for the navigation bar and makes it visible to the user.  */}
         <button
           type="button"
           onClick={toggleNavList}
           className="btn btn--icon nav__hamburger"
           aria-label="toggle navigation"
         >
+        {/*changes the value of showNavList state variable between true and false, and button changes depending on the value of showNavList */}
+        {/*if showNavLIst is true the button will show a close icon indicating nav list is open.*/}
           {showNavList ? <CloseIcon /> : <MenuIcon />}
         </button>
       </nav>

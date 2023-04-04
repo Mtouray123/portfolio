@@ -1,5 +1,5 @@
 import React from "react";
-import "./Techstacks.css";
+// imports several third party libraries for the icons 
 import { FaReact, FaNodeJs, FaAws } from "react-icons/fa";
 import {
   SiHtml5,
@@ -11,12 +11,16 @@ import { SiJavascript } from "react-icons/si";
 import { VscGithub } from "react-icons/vsc";
 import { BsBootstrap } from "react-icons/bs";
 
+import "./Techstacks.css";
+
+// displays list of imported tech icons and names as a part of skills section
 export const Techstacks = () => {
   return (
     <>
       <div className="section main" data-aos="fade-right">
         <h2 className="section__title different">Skills</h2>
         <div className="techsection">
+        {/*Each icon and name are displayed in a seperate div element according to respective icon and h5 element with techstack name */}
           <div>
             <SiJavascript />
             <h5>Javascript</h5>

@@ -15,7 +15,7 @@ export function About() {
         <UseWords />
         </div >
       <div className="about center">
-{/* uses data-aos attribute that indicates component animated using AOS(Animate on Scroll) library */}
+{/*uses data-aos attribute indicating component animated using AOS(Animate on Scroll) library */}
         <h1 className="mobileHead">
           Welcome <span className="about__name">I'm Mahamadou Touray</span>
         </h1>

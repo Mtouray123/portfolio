@@ -3,7 +3,6 @@ import "./Projects.css";
 import { FaReact } from "react-icons/fa";
 import {
   SiHtml5,
-  SiExpress,
   SiJavascript,
   SiMongodb,
   SiNodedotjs,
@@ -20,10 +19,14 @@ export const Projects = () => {
       <div className="section">
         <h2 className="section__title different">Projects</h2>
         <div className="allProjects">
+
+{/* functional component that returns a section with two project containers*/}
+{/*Each container contains information about a project name, image, description, techstack, and links to live project and code*/}
           <div className="projects_container" data-aos="fade-right">
             <div className="project">
               <div className="project_videocontainer">
                 <div>
+                {/*rendering a image from a variable imported from assets */}
                   <img
                     src={Spacejam}
                     alt="Movies App"
@@ -44,7 +47,7 @@ export const Projects = () => {
                 <div>
                   <a
                     href="https://moviesforfun.netlify.app/"
-                    target=""
+                    target="_blank"
                     rel="noreferrer"
                   >
                     <span type="button" className="btns onbt onbt">
@@ -64,22 +67,21 @@ export const Projects = () => {
               </div>
             </div>
           </div>
+          
           <div className="projects_container" data-aos="fade-right">
             <div className="project">
               <div className="project_videocontainer">
                 <div>
-                  <img
-                    src="https://i.ibb.co/MPzWN49/weather-app.png"
-                    alt="Sk-Weather-App"
+                <img
+                    src={Website}
+                    alt="First Website"
                   />
                 </div>
               </div>
               <div className="project_information">
-                <h2>SK Weather App</h2>
+                <h2>First HTML Website</h2>
                 <p>
-                  Location based weather app. User can also search for their
-                  cities and pickup location from map to see weather data of
-                  respective places.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo cupiditate minima adipisci quis animi perspiciatis odio magnam velit eligendi. Ipsum fuga sunt sit reiciendis cumque dolorum nam consequatur deleniti.
                 </p>
                 <div>
                   <DiCss3 />
@@ -88,7 +90,7 @@ export const Projects = () => {
                 </div>
                 <div>
                   <a
-                    href="https://sk-weather-app.netlify.app/weather-app.html"
+                    href="https://mahamadouwebsite.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -97,7 +99,7 @@ export const Projects = () => {
                     </span>
                   </a>
                   <a
-                    href="https://github.com/Shreyasgkhakal100/Weather-App"
+                    href="https://github.com/Mtouray123/MyFirstWebsite"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -164,7 +166,7 @@ export const Projects = () => {
                 </div>
               </div>
               <div className="project_information">
-                <h2>First HTML Website</h2>
+                <h2>Stock App</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, voluptates minima voluptatum, in tempora illo iure eos quaerat, ea tempore deleniti fugit sint debitis labore!
                 </p>
@@ -226,7 +228,7 @@ export const Projects = () => {
                     </span>
                   </a>
                   <a
-                    href="https://docs.google.com/document/d/1tcSc1Io_0UAzk7-qr-RvK51I8-KmXsVgMAJhjkapK-A/edit"
+                    href="https://www.espn.com/"
                     target="_blank"
                     rel="noreferrer"
                   >

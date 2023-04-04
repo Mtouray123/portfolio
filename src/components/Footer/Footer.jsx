@@ -1,22 +1,20 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./Footer.css";
-import { ThemeContext } from "../../Context/theme";
 
+// React functional component that 
 export const Footer = () => {
-  const [{ themename }] = useContext(ThemeContext);
 
-  return (
+    return (
     <>
-      <div className={"section " + themename}>
-        <a href="/" rel="noreferrer" target="_blank">
+      <div>
           <div className="footerBox">
             <h3 className="footer">
+            {/*used to add whitespace character between */}
               Made with{" "}
               <span style={{ color: `red`, background: `transparent` }}>❤</span>{" "}
               By Touray
             </h3>
           </div>
-        </a>
       </div>
     </>
   );
