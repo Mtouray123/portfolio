@@ -45,11 +45,14 @@ export const Projects = () => {
                   <FaReact />
                 </div>
                 <div>
+                  {/*HTML anchor element which creates hyperlink to another webpage*/}
+                  {/*target attribute specifies where the linked source will open */}
                   <a
                     href="https://moviesforfun.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
+                  {/*element used as button with some visual effects or styles */}
                     <span type="button" className="btns onbt onbt">
                       See this Live
                     </span>

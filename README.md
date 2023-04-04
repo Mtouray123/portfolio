@@ -6,7 +6,7 @@ Assigned to my software engineering boot camp as our first official React based 
 https://mahamadouportfolio.netlify.app/
 
 ## Technologies
-[![My Skills](https://skills.thijs.gg/icons?i=js,html,css,wasm)](https://skills.thijs.gg)
+[![My Skills](https://skills.thijs.gg/icons?i=js,html,css,react)](https://skills.thijs.gg)
 
 ## Main Requirements
 - Built with HTML, CSS, JS using React library
@@ -25,4 +25,5 @@ https://mahamadouportfolio.netlify.app/
 - Although I appreciate my content on single page I could include routing next time
 
 ## Sources
--
+- 
+- 

@@ -11,7 +11,7 @@ export const Type = () => {
     // takes in options prop which is an object containing various config options for typewriter
         options={{
         // array of strings that will be typed out
-          strings: ["Full Stack Web Developer", "Front-End", "Back-End",],
+          strings: ["Full Stack Web Developer", "Front-End", "Back-End", "Developer", "Programmer"],
         // specifies whether type writer should start typing automatically 
           autoStart: true,
         // specifies whether typewriter should start over from beginning after typing all strings

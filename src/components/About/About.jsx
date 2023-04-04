@@ -22,8 +22,7 @@ export function About() {
         <Type />
         <p className="about__desc" data-aos="fade-right">
         Inspiring Software Engineer and well rounded individual who possesses the willingness to learn a multitude of new skills. 
-        Having proficiency in Full Stack. Attired with a variety of tools & technologies and keen to
-        learn new ones. 
+        Having a variety of tools & technologies and keen to learn new ones. 
         </p>
       </div>
       <Introduction />
