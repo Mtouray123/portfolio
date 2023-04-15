@@ -3,10 +3,7 @@ import {useState, useEffect} from 'react';
 // code defines a custom react hook 
 // it fetches a random word from list of words and displays its definition using an external API
 export function UseWords() {
-    //functional component UseWords uses usestate hook used to define two pieces of state: words and loading
-    //words is a state variable words that holdes the fetched data from API, and setWords is the function used to update the state
-    // useState hook to create state variable with initial value of empty array
-    // empty array that holds the data fetched from API
+
     const [words, setWords] = useState([]);
 
     // boolean flag set to true to indicate data is being fetched from API

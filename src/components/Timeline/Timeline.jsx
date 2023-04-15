@@ -105,31 +105,65 @@ export const Timeline = () => {
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            date={"Oct 2021 - Present"}
+            date={"Sept 2018 - May 2021"}
             contentStyle={timelineElementStyle}
             contentArrowStyle={{ borderRight: "16px solid  var(--clr-primary)" }}
             iconStyle={timelineIconStyle}
             icon={<SchoolIcon />}
           >
             <h3 className="vertical-timeline-element-title" data-aos="fade-right">
+              Associates Degree in Engineering
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
+              Essex County College 
+            </h4>
+            <p data-aos="fade-right">
+              Vocational Technical High School that offered occupational and academic instruction in courses related to building trades, graphic design, green energy, and televison/production.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            date={"Nov 2018 - Present"}
+            contentStyle={timelineElementStyle}
+            contentArrowStyle={{ borderRight: "16px solid  var(--clr-primary)" }}
+            iconStyle={timelineIconStyle}
+            icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title" data-aos="fade-right">
+              Prime Now-Ecommerce Shopper
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
+              Amazon/Whole Foods 
+            </h4>
+            <p data-aos="fade-right">
+              Vocational Technical High School that offered occupational and academic instruction in courses related to building trades, graphic design, green energy, and televison/production.
+            </p>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            date={"July 2021 - Jan 2023"}
+            contentStyle={timelineElementStyle}
+            contentArrowStyle={{ borderRight: "16px solid  var(--clr-primary)" }}
+            iconStyle={timelineIconStyle}
+            icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title" data-aos="fade-right">
               Freight Dispatcher
             </h3>
             <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
-              UPS
+              T&D Freight Express LLC
             </h4>
             <p data-aos="fade-right">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis quisquam cupiditate, perspiciatis consequatur doloremque fugit obcaecati tenetur amet aspernatur voluptatum quod totam quo aut, vero deserunt nostrum quos accusamus.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
-            date={"Oct 2021 - Present"}
+            date={"Jan 2023 - May 2023"}
             contentStyle={timelineElementStyle}
             contentArrowStyle={{ borderRight: "16px solid  var(--clr-primary)" }}
             iconStyle={timelineIconStyle}
             icon={<SchoolIcon />}
           >
             <h3 className="vertical-timeline-element-title" data-aos="fade-right">
-              Alumni
+              SoftWare Engineering Bootcamp
             </h3>
             <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
               Per Scholas
