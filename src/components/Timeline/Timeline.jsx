@@ -95,13 +95,13 @@ export const Timeline = () => {
             icon={<SchoolIcon />}
           >
             <h3 className="vertical-timeline-element-title" data-aos="fade-right">
-              Inventory Specialist
+              Inventory Associate
             </h3>
             <h4 className="vertical-timeline-element-subtitle" data-aos="fade-right">
               Co-Op Inventory Service
             </h4>
             <p data-aos="fade-right">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis quisquam cupiditate, perspiciatis consequatur doloremque fugit obcaecati tenetur amet aspernatur voluptatum quod totam quo aut, vero deserunt nostrum quos accusamus.
+            To perform a physical inventory in our clients retail stores. Specifically, to count product in all departments, Grocery, Non Foods, Dairy, Frozen, Pharmacy, Health and Beauty Aids, Liquor, Greeting Cards, etc. The inventory is obtained by using either portable printing calculators or computer terminals.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
