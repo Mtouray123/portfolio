@@ -84,7 +84,7 @@ export const Timeline = () => {
               UPS
             </h4>
             <p data-aos="fade-right">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis quisquam cupiditate, perspiciatis consequatur doloremque fugit obcaecati tenetur amet aspernatur voluptatum quod totam quo aut, vero deserunt nostrum quos accusamus.
+              Loads and secure packages into delivery trucks. Adhere to company safe package handling standards at all times.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement

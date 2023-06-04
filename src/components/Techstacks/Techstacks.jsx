@@ -6,7 +6,7 @@ import {
   SiExpress,
   SiNetlify
 } from "react-icons/si";
-import { DiCss3, DiMongodb } from "react-icons/di";
+import { DiCss3, DiMongodb,} from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
 import { VscGithub } from "react-icons/vsc";
 import { BsBootstrap } from "react-icons/bs";

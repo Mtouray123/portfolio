@@ -26,6 +26,50 @@ export const Projects = () => {
             <div className="project">
               <div className="project_videocontainer">
                 <div>
+                <img
+                    src={Website}
+                    alt="First Website"
+                  />
+                </div>
+              </div>
+              <div className="project_information">
+                <h2>First HTML Website</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo cupiditate minima adipisci quis animi perspiciatis odio magnam velit eligendi. Ipsum fuga sunt sit reiciendis cumque dolorum nam consequatur deleniti.
+                </p>
+                <div>
+                  <DiCss3 />
+                  <SiHtml5 />
+                  <IoLogoJavascript />
+                </div>
+                <div>
+                  <a
+                    href="https://mahamadouwebsite.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span type="button" className="btns onbt">
+                      See this Live
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/Mtouray123/MyFirstWebsite"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span type="button" className="btns onbt">
+                      View Code
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div className="projects_container" data-aos="fade-right">
+            <div className="project">
+              <div className="project_videocontainer">
+                <div>
                 {/*rendering a image from a variable imported from assets */}
                   <img
                     src={Spacejam}
@@ -71,49 +115,6 @@ export const Projects = () => {
             </div>
           </div>
           
-          <div className="projects_container" data-aos="fade-right">
-            <div className="project">
-              <div className="project_videocontainer">
-                <div>
-                <img
-                    src={Website}
-                    alt="First Website"
-                  />
-                </div>
-              </div>
-              <div className="project_information">
-                <h2>First HTML Website</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nemo cupiditate minima adipisci quis animi perspiciatis odio magnam velit eligendi. Ipsum fuga sunt sit reiciendis cumque dolorum nam consequatur deleniti.
-                </p>
-                <div>
-                  <DiCss3 />
-                  <SiHtml5 />
-                  <IoLogoJavascript />
-                </div>
-                <div>
-                  <a
-                    href="https://mahamadouwebsite.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span type="button" className="btns onbt">
-                      See this Live
-                    </span>
-                  </a>
-                  <a
-                    href="https://github.com/Mtouray123/MyFirstWebsite"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span type="button" className="btns onbt">
-                      View Code
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
       
           <div className="projects_container" data-aos="fade-right">
             <div className="project">
