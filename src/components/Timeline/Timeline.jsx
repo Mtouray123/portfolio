@@ -101,7 +101,7 @@ export const Timeline = () => {
               Co-Op Inventory Service
             </h4>
             <p data-aos="fade-right">
-            To perform a physical inventory in our clients retail stores. Specifically, to count product in all departments, Grocery, Non Foods, Dairy, Frozen, Pharmacy, Health and Beauty Aids, Liquor, Greeting Cards, etc. The inventory is obtained by using either portable printing calculators or computer terminals.
+            To perform a physical inventory in our clients retail stores. Specifically, to count product in all departments. The inventory is obtained by using either portable printing calculators or computer terminals.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -118,7 +118,7 @@ export const Timeline = () => {
               Essex County College 
             </h4>
             <p data-aos="fade-right">
-              Vocational Technical High School that offered occupational and academic instruction in courses related to building trades, graphic design, green energy, and televison/production.
+              Degree program that offers a foundation for engineering studies to students using science, mathematical and physic principles. Specifically designed to prepare students for 4-year colleges, universities and for employment upon completion.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -135,7 +135,7 @@ export const Timeline = () => {
               Amazon/Whole Foods 
             </h4>
             <p data-aos="fade-right">
-              Vocational Technical High School that offered occupational and academic instruction in courses related to building trades, graphic design, green energy, and televison/production.
+              Work on the whole foods Ecommerce team supporting Prime Now customer orders. Shopping throughout the stores for everyday goods from various departments and preparing them for delivery and/or pickup.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -152,7 +152,7 @@ export const Timeline = () => {
               T&D Freight Express LLC
             </h4>
             <p data-aos="fade-right">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis quisquam cupiditate, perspiciatis consequatur doloremque fugit obcaecati tenetur amet aspernatur voluptatum quod totam quo aut, vero deserunt nostrum quos accusamus.
+              Schedule and secure freight to be picked up and delivered in timely manner through a trucking load board. Manage truck driver's routes and schedules. Complete paperwork for submission pertaining to each delivery.
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
@@ -169,7 +169,7 @@ export const Timeline = () => {
               Per Scholas
             </h4>
             <p data-aos="fade-right">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea blanditiis quisquam cupiditate, perspiciatis consequatur doloremque fugit obcaecati tenetur amet aspernatur voluptatum quod totam quo aut, vero deserunt nostrum quos accusamus.
+              15 week Software Engineering course that dives deep into every aspect of software engineering - computer science, React, Node, design patterns and system architecture, and more.Learn basic computer science topics like object-oriented programming and Javascript.
             </p>
           </VerticalTimelineElement>
           </VerticalTimeline>
