@@ -169,7 +169,7 @@ export const Timeline = () => {
               Per Scholas
             </h4>
             <p data-aos="fade-right">
-              15 week Software Engineering course that dives deep into every aspect of software engineering - computer science, React, Node, design patterns and system architecture, and more.Learn basic computer science topics like object-oriented programming and Javascript.
+              15 week Software Engineering course that dives deep into every aspect of software engineering - computer science, React, Node, design patterns and system architecture, and more. Learn basic computer science topics like object-oriented programming and Javascript.
             </p>
           </VerticalTimelineElement>
           </VerticalTimeline>

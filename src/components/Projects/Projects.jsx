@@ -66,6 +66,51 @@ export const Projects = () => {
             </div>
           </div>
           
+          
+      
+          <div className="projects_container" data-aos="fade-right">
+            <div className="project">
+              <div className="project_videocontainer">
+                <div>
+                  <img
+                    src={Jeopardy}
+                    alt="Jeopardy"
+                  />
+                </div>
+              </div>
+              <div className="project_information">
+                <h2>Jeopardy Project</h2>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate odit animi explicabo culpa? Culpa veritatis aperiam alias recusandae voluptates velit dolore quidem. Ipsum neque consequatur beatae soluta, id praesentium.
+                </p>
+                <div>
+                  <SiHtml5 />
+                  <DiCss3 />
+                  <SiJavascript />
+                </div>
+                <div>
+                  <a
+                    href="https://jeopardyproject.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span type="button" className="btns onbt onbt">
+                      Let's Play
+                    </span>
+                  </a>
+                  <a
+                    href="https://github.com/Mtouray123/Jeopardy-Project"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <span type="button" className="btns onbt">
+                      View Code
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div className="projects_container" data-aos="fade-right">
             <div className="project">
               <div className="project_videocontainer">
@@ -103,51 +148,6 @@ export const Projects = () => {
                   </a>
                   <a
                     href="https://github.com/Mtouray123/Module_2/tree/main/moviesapp"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span type="button" className="btns onbt">
-                      View Code
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-      
-          <div className="projects_container" data-aos="fade-right">
-            <div className="project">
-              <div className="project_videocontainer">
-                <div>
-                  <img
-                    src={Jeopardy}
-                    alt="Jeopardy"
-                  />
-                </div>
-              </div>
-              <div className="project_information">
-                <h2>Jeopardy Project</h2>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate odit animi explicabo culpa? Culpa veritatis aperiam alias recusandae voluptates velit dolore quidem. Ipsum neque consequatur beatae soluta, id praesentium.
-                </p>
-                <div>
-                  <SiHtml5 />
-                  <DiCss3 />
-                  <SiJavascript />
-                </div>
-                <div>
-                  <a
-                    href="https://jeopardyproject.netlify.app/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <span type="button" className="btns onbt onbt">
-                      Let's Play
-                    </span>
-                  </a>
-                  <a
-                    href="https://github.com/Mtouray123/Jeopardy-Project"
                     target="_blank"
                     rel="noreferrer"
                   >
