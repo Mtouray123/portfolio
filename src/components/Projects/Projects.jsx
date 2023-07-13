@@ -6,12 +6,14 @@ import {
   SiJavascript,
   SiMongodb,
   SiNodedotjs,
+  SiExpress
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 import Jeopardy from "../../assets/JeopardyScreenshot.png"
 import Spacejam from "../../assets/SpaceJam.png"
 import Website from "../../assets/MyWebsite.png"
+import Jobportal from "../../assets/JobPortal.png"
 
 export const Projects = () => {
   return (
@@ -117,17 +119,21 @@ export const Projects = () => {
               <div className="project_videocontainer">
                 <div>
                   <img
-                    src={Jeopardy}
-                    alt="Jeopardy"
+                    src={Jobportal}
+                    alt="Jobportal"
                   />
                 </div>
               </div>
               <div className="project_information">
                 <h2>MERN Job Portal</h2>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga voluptate odit animi explicabo culpa? Culpa veritatis aperiam alias recusandae voluptates velit dolore quidem. Ipsum neque consequatur beatae soluta, id praesentium.
+                Job Portal is a MERN Stack based web app which helps in streamlining the flow of job application process. It allows users to search for available jobs in . In this web app, login session are persistent and REST APIs are securely protected by JWT token verification. After logging in, the user can create, apply, delete and update job postings and application forms.
                 </p>
                 <div>
+                  <SiMongodb />
+                  <SiExpress />
+                  <FaReact />
+                  <SiNodedotjs />
                   <SiHtml5 />
                   <DiCss3 />
                   <SiJavascript />
