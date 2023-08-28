@@ -21,8 +21,7 @@ export function About() {
         </h1>
         <Type />
         <p className="about__desc" data-aos="fade-right">
-        Inspiring Software Engineer and well rounded individual who possesses the willingness to learn a multitude of new skills. 
-        Having a variety of tools & technologies and keen to learn new ones. 
+        Enthusiastic Software Engineer skilled in MERN stack and React.js development. Proficient in building web applications and knowledgeable in SQL fundamentals. Eager to expand expertise and embrace emerging technologies.
         </p>
       </div>
       <Introduction />
